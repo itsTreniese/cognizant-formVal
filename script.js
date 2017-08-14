@@ -1,11 +1,7 @@
 
-//form focus function
-window.onload = function(){
-  document.getElementsByName('userid').focus();
-}
-
 function firstfocus(){
-  var userName = document.getElementsByName('userid');
+  var userName = document.getElementsByName('userid')[0];
+  userName.focus();
 console.log(userName);
 
   if (!userName.value || userName.value == ''){
@@ -38,8 +34,8 @@ function allLetter(){
   }
 }
 
-function validateEmail() {
-  var userEmail = document.getElementsByName('email').value;
-  var emailAZ = 
-  if (!userEmail === )
-}
+// function validateEmail() {
+//   var userEmail = document.getElementsByName('email').value;
+//   var emailAZ =
+//   if (!userEmail === )
+// }
