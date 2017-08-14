@@ -37,3 +37,9 @@ function allLetter(){
     console.log('User\'s name is invalid!');
   }
 }
+
+function validateEmail() {
+  var userEmail = document.getElementsByName('email').value;
+  var emailAZ = 
+  if (!userEmail === )
+}
