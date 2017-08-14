@@ -5,18 +5,20 @@ window.onload = function(){
 }
 
 function firstfocus(){
-
   var userName = document.getElementsByName('userid');
 console.log(userName);
-  if (userName.checkValidity == false ){
-    console.log("Please Enter Your User Name.")
+  if (!userName.value || userName.value == ''){
+    console.log('Please Enter Your User Name.');
+  } else {
+    userName.style.borderColor = "red";
+    console.log('Your username is invalid')
   }
 }
 
 function passId() {
   var password = document.getElementsByName('passid').value;
 console.log(password);
-if (!password){
-  console.log("Please Enter Your Password.")
-}
+  if (!password){
+    console.log("Please Enter Your Password.")
+  }
 }
