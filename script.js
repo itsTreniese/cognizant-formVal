@@ -26,3 +26,14 @@ console.log(password);
     console.log('Your password is invalid.')
   }
 }
+
+function allLetter(){
+  //console.log('all letter function works');
+  var letAZ = /^[A-Za-z]+$/;
+  var userInput = document.getElementsByName('username').value;
+  if (!userInput === letAZ) {
+    console.log('User\’s name should have alphabet characters only!');
+  } else {
+    console.log('User\'s name is invalid!');
+  }
+}
