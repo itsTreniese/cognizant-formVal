@@ -60,7 +60,7 @@ function validateEmail() {
   if (userEmail == ''){
     console.log('Please enter your email.');
     return false;
-  } else if (dot >= 2 && atSym =< elength - 2) {
+  } else if (atSym >= 2 && dot <= elength - 2) {
     console.log('Email accepted');
   } else {
     console.log('You have entered an invalid email format!');
