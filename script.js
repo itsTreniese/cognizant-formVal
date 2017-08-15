@@ -50,14 +50,14 @@ function allLetter(){
 }
 
 function validateEmail() {
-   var userEmail = document.getElementsByName('email').value;
+   var userEmail = document.getElementsByName('email')[0].value;
    console.log(userEmail);
    var elength = userEmail.length;
    var dot = userEmail.indexOf('.');
    var atSym = userEmail.indexOf('@');
 
   if (userEmail == ''){
-    console.log('You have entered an invalid email format!');
+    console.log('Please enter your email.');
     return false;
   }
 
