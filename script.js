@@ -52,7 +52,10 @@ function allLetter(){
 function validateEmail() {
    var userEmail = document.getElementsByName('email')[0].value;
    console.log(userEmail);
-  if (!userEmail === ){
+   var elength = userEmail.length;
+   var dot = userEmail.indexOf('.');
+   var atSym = userEmail.indexOf('@');
+  if (!userEmail == ){
 
   }
  }
