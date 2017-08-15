@@ -9,7 +9,7 @@ function userid_validation(num1,num2){
     var userName = document.getElementsByName('userid').value;
 
   if (!userName || userName == ''){
-    console.log('Please Enter Your User Name.');
+    console.log('User ID should not be empty!');
   }
 
   if (userName >= 5 && userName <= 12) {
@@ -29,11 +29,12 @@ function passId() {
 
 function passid_validation(num1,num2) {
     var password = document.getElementsByName('passid')[0].value;
-  if (!password || password == ''){
+  if (password == ''){
     console.log('User password should not be empty!')
-  } else {
-    console.log('Your password is invalid.')
-  }
+  } else if (password >= 7 && password <= 12) {
+        console.log("Your password is accepted!");
+        return true;
+    }
 }
 
 
@@ -42,9 +43,9 @@ function allLetter(){
   //console.log('all letter function works');
   var letAZ = /^[A-Za-z]+$/;
   var userInput = document.getElementsByName('username')[0].value;
-  if (!userInput === letAZ) {
+  if (userInput === !letAZ) {
     console.log('User\’s name should have alphabet characters only!');
-  } else {
+  } else if (userInput == ''){
     console.log('User\'s name is invalid!');
   }
 }
@@ -59,6 +60,10 @@ function validateEmail() {
   if (userEmail == ''){
     console.log('Please enter your email.');
     return false;
+  } else if (dot >= 2 && atSym =< elength - 2) {
+    console.log('Email accepted');
+  } else {
+    console.log('You have entered an invalid email format!');
   }
 
  }
