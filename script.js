@@ -50,7 +50,7 @@ function allLetter(){
 }
 
 function validateEmail() {
-   var userEmail = document.getElementsByName('email')[0].value;
+   var userEmail = document.getElementsByName('email').value;
    console.log(userEmail);
    var elength = userEmail.length;
    var dot = userEmail.indexOf('.');
