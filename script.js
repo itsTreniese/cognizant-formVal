@@ -3,30 +3,36 @@ function firstfocus(){
   var userName = document.getElementsByName('userid')[0];
   userName.focus();
 console.log(userName);
-
 }
 
-function userid_validation(){
-    var userName = document.getElementsByName('userid')[0];
-  if (!userName.value || userName.value == ''){
+function userid_validation(num1,num2){
+    var userName = document.getElementsByName('userid')[0].value;
+  if (!userName || userName == ''){
     console.log('Please Enter Your User Name.');
-  } else {
-    userName.style.borderColor = "red";
-    console.log('Your username is invalid')
+  }
+  
+  if (userName => 5 || userName <= 12) {
+      console.log("Your User name is accepted!")
   }
 }
 
 function passId() {
-  var password = document.getElementsByName('passid').value;
-document.getElementsByName('passid').focus();
-console.log(password);
+    var password = document.getElementsByName('passid')[0];
+    password.focus();
+  console.log(password);
+}
 
+
+function passid_validation(num1,num2) {
+    var password = document.getElementsByName('passid')[0];
   if (!password.value || password.value == ''){
     console.log('User password should not be empty!')
   } else {
     console.log('Your password is invalid.')
   }
 }
+
+
 
 function allLetter(){
   //console.log('all letter function works');
