@@ -4,6 +4,10 @@ function firstfocus(){
   userName.focus();
 console.log(userName);
 
+}
+
+function userid_validation(){
+    var userName = document.getElementsByName('userid')[0];
   if (!userName.value || userName.value == ''){
     console.log('Please Enter Your User Name.');
   } else {
@@ -13,7 +17,8 @@ console.log(userName);
 }
 
 function passId() {
-  var password = document.getElementsByName('passid');
+  var password = document.getElementsByName('passid').value;
+document.getElementsByName('passid').focus();
 console.log(password);
 
   if (!password.value || password.value == ''){
@@ -26,7 +31,7 @@ console.log(password);
 function allLetter(){
   //console.log('all letter function works');
   var letAZ = /^[A-Za-z]+$/;
-  var userInput = document.getElementsByName('username').value;
+  var userInput = document.getElementsByName('username')[0].value;
   if (!userInput === letAZ) {
     console.log('User\’s name should have alphabet characters only!');
   } else {
