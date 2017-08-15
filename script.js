@@ -7,13 +7,17 @@ console.log(userName);
 
 function userid_validation(num1,num2){
     var userName = document.getElementsByName('userid')[0].value;
+
   if (!userName || userName == ''){
     console.log('Please Enter Your User Name.');
   }
-  
+
   if (userName => 5 || userName <= 12) {
-      console.log("Your User name is accepted!")
+      console.log("Your User name is accepted!");
+      return true;
   }
+
+
 }
 
 function passId() {
@@ -45,8 +49,10 @@ function allLetter(){
   }
 }
 
-// function validateEmail() {
-//   var userEmail = document.getElementsByName('email').value;
-//   var emailAZ =
-//   if (!userEmail === )
-// }
+function validateEmail() {
+   var userEmail = document.getElementsByName('email')[0].value;
+   console.log(userEmail);
+  if (!userEmail === ){
+
+  }
+ }
